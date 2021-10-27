@@ -58,6 +58,7 @@ header .container .header-top h3 {
   text-align: right;
   padding-top: 76px;
   line-height: 150%;
+  font-weight: 400;
 }
 header .container .header-center {
   position: absolute;
@@ -73,6 +74,7 @@ header .container .header-center h1 {
   text-align: right;
   line-height: 64px;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 header .container .header-center h4 {
   text-align: right;
@@ -138,6 +140,7 @@ section {
   font-size: 48px;
   margin-bottom: 67px;
   font-size: 48px;
+  font-weight: 400;
 }
 #about .textBlock {
   display: -webkit-box;
@@ -222,6 +225,7 @@ section {
   padding-top: 100px;
   margin-bottom: 100px;
   font-size: 48px;
+  font-weight: 400;
 }
 #catalog .catalog-item {
   display: -webkit-box;
@@ -261,6 +265,7 @@ section {
 #partner .partner-top h1 {
   font-size: 48px;
   font-family: "Playfair Display";
+  font-weight: 400;
 }
 #partner .partner-top .success {
   font-size: 20px;
@@ -278,6 +283,7 @@ section {
   font-family: "Playfair Display";
   font-weight: normal;
   margin-bottom: 50px;
+  font-weight: 400;
 }
 #contact .iframe {
   position: relative !important;
