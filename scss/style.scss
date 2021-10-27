@@ -1,9 +1,14 @@
 $mainOrange: #f07f18;
 $gray: #516c81;
 $mainGray: #273947;
+$mainGray2: #162634;
 $montserrat: 'Montserrat', sans-serif;
 $playfair: 'Playfair Display';
 
+ul{
+    list-style:none;
+    padding-left: 0;
+}
 body {
 	font-family: $montserrat;
 	line-height: 1;
@@ -12,6 +17,7 @@ body {
 	color: white;
 	line-height: 24px;
 }
+
 .container {
 	max-width: 1200px;
 }
@@ -140,6 +146,7 @@ section {
 		font-family: $playfair;
 		font-size: 48px;
 		margin-bottom: 67px;
+        font-size: 48px;
 	}
 	.textBlock {
 		display: flex;
@@ -240,7 +247,7 @@ section {
         text-transform: uppercase;
         padding-top: 100px;
         margin-bottom: 100px;
-        //#162634
+        font-size: 48px;
         
     }
     .catalog-item{
@@ -251,23 +258,95 @@ section {
         flex-direction: column;
         padding: 80px 0;
         margin-bottom: 20px;
+        max-height: 332px;
         img{
             margin-bottom: 50px;
+        }
+        .cat-title{
+            text-align: center;
         }
     }
 }
 
+#partner{
+    padding-top:100px;
+    padding-bottom: 130px;
+    background-color: white !important;
+    color:#273947;
+    .partner-top{
+        margin-bottom: 100px;
+        h1{
+            font-size: 48px;
+            font-family: $playfair;
+        }
+        .success{
+            font-size: 20px;
+            font-weight: 600;
+        }        
+    }
+    .row1{
+        margin-bottom: 80px;
+    }
+}
 
 #contact {
-	padding: 0 12px;
+    background-color: $mainGray2 !important;
+    h1{
+        font-size: 48px;
+        font-family: $playfair;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }	
 	.iframe {
 		position: relative !important;
-		top: 6px !important;
 	}
+    .contact-map{
+        height: 100% !important;
+    }
+    .formBlock{
+        padding:100px 100px;
+        .ui.form{
+            input, textarea, button{
+                background-color: transparent;
+                border:1px solid white;
+                padding:15px;
+                border-radius: unset;
+                color:white;
+            }
+        }
+    }
+
 }
 
 footer {
 	background-color: $gray;
+    padding-top: 95px;
+    .footer-logo{
+        margin-bottom: 50px;
+    }
+    .footer-text{
+        width: 85%;
+    }
+    h4{
+        font-size: 20px;
+        margin-bottom: 37px;
+    }
+    .catalog-list{
+        line-height: 40px;
+    }
+    .contact-list{
+        li{
+            margin-bottom: 20px;
+            img{
+                margin-right: 7px;
+            }
+        }
+        .callMe-footer{
+            padding:10px 25px;
+            border-radius: unset;
+        }
+        
+    }
 }
 
 //******************@media*****************

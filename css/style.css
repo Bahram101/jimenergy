@@ -1,3 +1,8 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1;
@@ -132,6 +137,7 @@ section {
   font-family: "Playfair Display";
   font-size: 48px;
   margin-bottom: 67px;
+  font-size: 48px;
 }
 #about .textBlock {
   display: -webkit-box;
@@ -215,6 +221,7 @@ section {
   text-transform: uppercase;
   padding-top: 100px;
   margin-bottom: 100px;
+  font-size: 48px;
 }
 #catalog .catalog-item {
   display: -webkit-box;
@@ -233,21 +240,88 @@ section {
           flex-direction: column;
   padding: 80px 0;
   margin-bottom: 20px;
+  max-height: 332px;
 }
 #catalog .catalog-item img {
   margin-bottom: 50px;
 }
+#catalog .catalog-item .cat-title {
+  text-align: center;
+}
+
+#partner {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  background-color: white !important;
+  color: #273947;
+}
+#partner .partner-top {
+  margin-bottom: 100px;
+}
+#partner .partner-top h1 {
+  font-size: 48px;
+  font-family: "Playfair Display";
+}
+#partner .partner-top .success {
+  font-size: 20px;
+  font-weight: 600;
+}
+#partner .row1 {
+  margin-bottom: 80px;
+}
 
 #contact {
-  padding: 0 12px;
+  background-color: #162634 !important;
+}
+#contact h1 {
+  font-size: 48px;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  margin-bottom: 50px;
 }
 #contact .iframe {
   position: relative !important;
-  top: 6px !important;
+}
+#contact .contact-map {
+  height: 100% !important;
+}
+#contact .formBlock {
+  padding: 100px 100px;
+}
+#contact .formBlock .ui.form input, #contact .formBlock .ui.form textarea, #contact .formBlock .ui.form button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: unset;
+  color: white;
 }
 
 footer {
   background-color: #516c81;
+  padding-top: 95px;
+}
+footer .footer-logo {
+  margin-bottom: 50px;
+}
+footer .footer-text {
+  width: 85%;
+}
+footer h4 {
+  font-size: 20px;
+  margin-bottom: 37px;
+}
+footer .catalog-list {
+  line-height: 40px;
+}
+footer .contact-list li {
+  margin-bottom: 20px;
+}
+footer .contact-list li img {
+  margin-right: 7px;
+}
+footer .contact-list .callMe-footer {
+  padding: 10px 25px;
+  border-radius: unset;
 }
 
 @media (min-width: 992px) {
