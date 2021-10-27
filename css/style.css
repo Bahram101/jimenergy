@@ -47,7 +47,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
-  margin-top: 100px;
+  margin-top: 98px;
 }
 header .container {
   height: inherit;
@@ -56,18 +56,20 @@ header .container .header-top h3 {
   text-transform: uppercase;
   font-size: 20px;
   text-align: right;
-  padding-top: 76px;
+  padding-top: 55px !important;
   line-height: 150%;
   font-weight: 400;
+  margin-bottom: 30px !important;
 }
-header .container .header-center {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+header .container .header-center-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-header .container .header-center h1 {
+header .container .header-center-parent .header-center h1 {
   font-size: 48px;
   text-transform: uppercase;
   font-family: "Playfair Display";
@@ -76,22 +78,18 @@ header .container .header-center h1 {
   margin-bottom: 30px;
   font-weight: 400;
 }
-header .container .header-center h4 {
+header .container .header-center-parent .header-center h4 {
   text-align: right;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 80px;
 }
-header .container .header-center .btnBlock {
+header .container .header-center-parent .header-center .btnBlock {
   text-align: right !important;
 }
-header .container .header-center .btnBlock button {
+header .container .header-center-parent .header-center .btnBlock button {
   border-radius: 0;
   padding: 14px;
-}
-header .container .header-bottom {
-  position: absolute;
-  bottom: 100px;
 }
 header .container .header-bottom h4 {
   font-size: 20px;
@@ -102,10 +100,6 @@ header .container .header-bottom h4 {
 header .container .header-bottom p {
   font-size: 14px;
   line-height: 21px;
-}
-
-section {
-  background-color: #273947;
 }
 
 #about {
@@ -152,14 +146,15 @@ section {
 }
 #about .textBlock .text p {
   margin-bottom: 28px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 #about .advantages {
-  margin-top: 136px;
+  margin-top: 90px;
 }
 #about .advantages h3 {
   font-size: 36px;
+  font-weight: 400;
   font-family: "Playfair Display";
   margin-bottom: 70px;
 }
@@ -178,20 +173,25 @@ section {
   font-weight: 500;
   line-height: 24px;
   font-weight: 500;
+  font-size: 15px !important;
 }
 #about .advantages .text p {
   margin-bottom: 28px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 #about .howWeWork {
-  margin-top: 116px;
+  margin-top: 70px !important;
 }
 #about .howWeWork h3 {
   font-family: "Playfair Display";
   font-size: 36px;
   line-height: 54px;
   margin-bottom: 70px;
+  font-weight: 400;
+}
+#about .howWeWork .work-item {
+  margin-bottom: 50px !important;
 }
 #about .howWeWork .work-item .work-icon {
   margin-right: 20px;
@@ -204,26 +204,33 @@ section {
   font-size: 20px;
   margin-bottom: 20px;
 }
+#about .howWeWork .work-item .work-desc {
+  font-size: 16px !important;
+}
 #about .takePart {
-  margin-top: 116px;
+  margin-top: 50px !important;
 }
 #about .takePart h3 {
   font-family: "Playfair Display";
   font-size: 36px;
   margin-bottom: 70px;
+  font-weight: 400;
 }
 #about .takePart .takePart-item .takePart-title {
   margin-top: 15px;
   margin-bottom: 40px;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px !important;
 }
 
+#catalog {
+  background-color: #273947;
+}
 #catalog h1 {
   font-family: "Playfair Display";
   text-transform: uppercase;
-  padding-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 65px !important;
+  margin-bottom: 70px !important;
   font-size: 48px;
   font-weight: 400;
 }
@@ -275,9 +282,6 @@ section {
   margin-bottom: 80px;
 }
 
-#contact {
-  background-color: #162634 !important;
-}
 #contact h1 {
   font-size: 48px;
   font-family: "Playfair Display";
@@ -292,9 +296,12 @@ section {
   height: 100% !important;
 }
 #contact .formBlock {
+  background-color: #162634;
   padding: 100px 100px;
 }
-#contact .formBlock .ui.form input, #contact .formBlock .ui.form textarea, #contact .formBlock .ui.form button {
+#contact .formBlock .ui.form input,
+#contact .formBlock .ui.form textarea,
+#contact .formBlock .ui.form button {
   background-color: transparent;
   border: 1px solid white;
   padding: 15px;
@@ -341,5 +348,160 @@ footer .contact-list .callMe-footer {
 @media (max-width: 991px) {
   .navbar {
     padding: 30px 0 !important;
+  }
+
+  .mapBlock {
+    height: 430px;
+  }
+}
+@media (max-width: 767px) {
+  .header-top h3 {
+    text-align: center !important;
+  }
+
+  .header-center-parent {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .header-center h1 {
+    font-size: 36px !important;
+    text-align: center !important;
+  }
+
+  .header-center h4 {
+    margin-bottom: 40px !important;
+    text-align: center !important;
+  }
+
+  .header-center .btnBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+
+  .header-bottom {
+    margin-top: 10px !important;
+    text-align: center !important;
+  }
+}
+@media (min-width: 768px) {
+  .header-bottom {
+    position: absolute;
+    bottom: 100px;
+  }
+}
+@media (max-width: 744px) {
+  .header-top h3 {
+    font-size: 18px !important;
+    padding-top: 45px !important;
+  }
+
+  .header-center h1 {
+    line-height: 45px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .header-bottom {
+    display: none !important;
+  }
+  .header-bottom h4 {
+    margin-bottom: 35px !important;
+  }
+
+  .advantage-item {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-align: center !important;
+  }
+  .advantage-item .advantage-icon {
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .work-text {
+    margin-top: 15px !important;
+    margin-bottom: 20px;
+  }
+
+  .howWeWork h3,
+.advantages h3,
+.takePart h3 {
+    text-align: center !important;
+  }
+
+  .work-item {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-align: center !important;
+  }
+
+  section h1 {
+    text-align: center !important;
+  }
+
+  #partner {
+    padding-bottom: 35px !important;
+    padding-top: 50px !important;
+  }
+  #partner .row1 {
+    margin-bottom: unset !important;
+  }
+  #partner .vert {
+    margin-bottom: 30px !important;
+  }
+  #partner .partner-top {
+    margin-bottom: 50px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+
+  footer .col-lg-4 {
+    margin-bottom: 40px !important;
+  }
+
+  #about .text,
+.advantages .text {
+    padding: 0 15px !important;
+  }
+  #about .row2,
+.advantages .row2 {
+    margin-top: unset !important;
+  }
+
+  #about {
+    padding-top: 60px !important;
+  }
+  #about h1 {
+    margin-bottom: 50px !important;
+  }
+
+  h1 {
+    font-size: 36px !important;
+  }
+
+  .formBlock {
+    background-color: #162634 !important;
+    padding: 60px 35px !important;
+  }
+}
+@media (max-width: 460px) {
+  .header-center h1 {
+    font-size: 25px !important;
   }
 }
